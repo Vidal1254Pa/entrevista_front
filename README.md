@@ -1,59 +1,68 @@
-# EntrevistaFront
+# Guía de Instalación
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.4.
+Esta guía te ayudará a configurar el entorno de desarrollo y a instalar las dependencias necesarias para ejecutar el proyecto.
 
-## Development server
+## Prerrequisitos
 
-To start a local development server, run:
+Asegúrate de tener las siguientes herramientas instaladas en tu sistema:
 
-```bash
-ng serve
-```
+- **Node Version Manager (nvm)**: Herramienta para gestionar múltiples versiones de Node.js.
+  - [Instalación de nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Node.js**: Entorno de ejecución de JavaScript.
+- **npm** (Node Package Manager) o **Yarn**: Gestor de paquetes para Node.js (generalmente viene con Node.js).
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Pasos de Instalación
 
-## Code scaffolding
+Sigue estos pasos para poner en marcha el proyecto:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### 1. Configurar Node.js con nvm
 
-```bash
-ng generate component component-name
-```
+Este proyecto requiere Node.js en su versión `22.14.0`. Si ya tienes `nvm` instalado, puedes configurar la versión de Node.js de la siguiente manera:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+1.  **Instalar la versión específica de Node.js (si no la tienes):**
+    `bash
+nvm install 22.14.0
+    `
 
-```bash
-ng generate --help
-```
+2.  **Usar la versión específica de Node.js para este proyecto:**
+    `bash
+nvm use 22.14.0
+    `
 
-## Building
+        *Opcional: Para asegurarte de que esta versión se use automáticamente cada vez que entres al directorio del proyecto, puedes crear un archivo `.nvmrc` en la raíz del proyecto con el contenido `22.14.0`.*
 
-To build the project run:
+### 2. Instalar Dependencias
 
-```bash
-ng build
-```
+Una vez que tengas la versión correcta de Node.js configurada, navega hasta el directorio raíz del proyecto en tu terminal e instala las dependencias. Puedes usar `npm` o `yarn`:
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+**Usando npm:**
 
 ```bash
-ng test
+npm install
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+**Usando Yarn:**
 
 ```bash
-ng e2e
+yarn install
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+### 3. Ejecutar el Proyecto
 
-## Additional Resources
+Después de instalar todas las dependencias, puedes iniciar el proyecto. Los comandos pueden variar dependiendo de la configuración del proyecto (por ejemplo, `npm start`, `npm run dev`, `yarn start`, `yarn dev`). Consulta la documentación específica del proyecto o el archivo `package.json` para los scripts disponibles.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Ejemplo (usando npm):**
+
+```bash
+npm start
+```
+
+**Ejemplo (usando Yarn):**
+
+```bash
+yarn start
+```
+
+---
+
+¡Listo! Con estos pasos deberías tener el proyecto configurado y funcionando en tu máquina local.
